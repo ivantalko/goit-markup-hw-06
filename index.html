@@ -23,6 +23,36 @@
       <div class="modal" >
         <button data-modal-close class="modal-b" type="button"><svg width="11" height="11"><use href="./imges/symbol-defs.svg#icon-Vector"></use>
         </svg></button>
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="form-contact">
+          <div class="form-block">
+  <label class="form-label" for="name" >
+    Имя</label>
+  <input class="form-input" type="text" name="name" id="name" autofocus placeholder="" />
+  <svg class="form-icon-person" width="12" height="12"><use href="./imges/symbol-defs.svg#icon-person-black"></use></svg>
+ </div>
+ <div class="form-block" >
+<label class="form-label" for="tel" >Телефон </label>
+<input class="form-input" type="tel" name="tel" id="tel" placeholder="" />
+<svg class="form-icon-phone" width="13" height="13"><use href="./imges/symbol-defs.svg#icon-phone-black"></use></svg>
+
+</div>
+<div class="form-block">
+<label class="form-label" for="mail" >Почта</label>
+ <input class="form-input" type="email" name="mail" id="mail" placeholder="" />
+ <svg class="form-icon-post" width="15" height="12"><use href="./imges/symbol-defs.svg#icon-post-black"></use></svg>
+ </div>
+ <div class="form-block comment">
+  <label class="form-label" for="comment" >
+    Комментарий</label>
+    <textarea class="form-textarea" name="comment" rows="8" placeholder="Введите текст" id="comment"></textarea>
+</div>
+<div class="form-terms">
+  <input class="form-input" type="checkbox" name="terms" id="terms" placeholder="">
+  <label class="form-terms-text" for="terms">Соглашаюсь с рассылкой и принимаю<a href="#"> Условия договора</a></label>
+  </div>
+<button class="form-button"  type="submit">Отправить</button>   
+  </form>
       </div>
     </div>
     <!--header-->
@@ -368,6 +398,16 @@
               ></a>
             </li>
           </ul>
+        </div>
+        <div class="form-mail">
+          <h2 class="form-mail-list">Подпишитесь на рассылку</h2>
+        <form action="email">
+ 
+ <input class="form-mail-input" type="email" name="mail"  placeholder="E-mail"/>
+ <button class="form-mail-b"  type="button">Подписаться<svg class="form-email-icon" width="24" height="24"><use href="./imges/symbol-defs.svg#icon-send"></use></svg>
+ </button>   
+        </form>
+
         </div>
       </div>
     
