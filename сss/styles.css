@@ -846,7 +846,10 @@ p {
   border: transparent;
   border-radius: 4px;
   cursor: pointer;
-  transition: 250ms;
+  transition: 250ms var(--acsent-color);
+}
+.form-mail-b:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .form-email-icon {
   vertical-align: middle;
