@@ -160,6 +160,24 @@ p {
 .form-input:focus ~ .form-icon-post {
   fill: #2196f3;
 }
+.checkbox {
+  appearance: none;
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid #212121;
+  border-radius: 2px;
+}
+.checkbox:checked + .checkbox-icon {
+  border-color: transparent;
+  background-color: #2196f3;
+  background-image: url(../imges/icon-chekbox.svg);
+  background-size: cover;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
 .form-label {
   font-family: 'Roboto';
   font-style: normal;
@@ -201,6 +219,9 @@ p {
   margin-bottom: 30px;
 }
 .form-terms-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -209,6 +230,16 @@ p {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.form-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
 .form-button {
   display: block;
   margin-left: auto;
@@ -790,6 +821,7 @@ p {
   color: #ffffff;
 }
 .form-mail-input {
+  padding-left: 16px;
   height: 50px;
   width: 358px;
   color: #ffffff;
@@ -823,6 +855,16 @@ p {
 
 .form-mail-b:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.form-mail-input::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*button*/

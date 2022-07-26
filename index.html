@@ -48,8 +48,10 @@
     <textarea class="form-textarea" name="comment" rows="8" placeholder="Введите текст" id="comment"></textarea>
 </div>
 <div class="form-terms">
-  <input class="form-input" type="checkbox" name="terms" id="terms" placeholder="">
-  <label class="form-terms-text" for="terms">Соглашаюсь с рассылкой и принимаю<a href="#"> Условия договора</a></label>
+  <label class="form-terms-text" >
+  <input class="checkbox" type="checkbox" name="terms">
+  <span class="checkbox-icon"></span>
+  Соглашаюсь с рассылкой и принимаю<a href="#" class="form-link"> Условия договора</a></label>
   </div>
 <button class="form-button"  type="submit">Отправить</button>   
   </form>
@@ -404,7 +406,7 @@
         <form action="email">
  
  <input class="form-mail-input" type="email" name="mail"  placeholder="E-mail"/>
- <button class="form-mail-b"  type="button">Подписаться<svg class="form-email-icon" width="24" height="24"><use href="./imges/symbol-defs.svg#icon-send"></use></svg>
+ <button class="form-mail-b"  type="submit">Подписаться<svg class="form-email-icon" width="24" height="24"><use href="./imges/symbol-defs.svg#icon-send"></use></svg>
  </button>   
         </form>
 
